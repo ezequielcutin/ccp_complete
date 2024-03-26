@@ -173,7 +173,7 @@ h3{
 
 
   /* Tablet view adjustments */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px){
     body, p {
         font-size: 18px; /* Adjust base font size */
     }
