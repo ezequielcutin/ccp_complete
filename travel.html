@@ -21,6 +21,25 @@
     </nav>
     <main id="main-content">
         <h1>Travel Locations</h1>
+        <button id="theme-switcher">Switch Theme</button>
+
+        <script>
+            const themeSwitcher = document.getElementById('theme-switcher');
+    
+            function toggleTheme() {
+                const isDarkTheme = document.body.classList.toggle('dark-theme');
+                localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
+            }
+    
+            themeSwitcher.addEventListener('click', toggleTheme);
+    
+            document.addEventListener('DOMContentLoaded', () => {
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'dark') {
+                    document.body.classList.add('dark-theme');
+                }
+            });
+        </script>
         <div>
             <h2>Yellowstone National Park</h2>
             <img src="images/yellowstone_sunset.jpg" class="main-picture" alt="Yellowstone Sunset" width="200">

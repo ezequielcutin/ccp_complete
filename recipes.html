@@ -24,6 +24,24 @@
     <main id="main-content">
         <div>
             <h1>Recipes!</h1>
+            <button id="theme-switcher">Switch Theme</button>
+        <script>
+            const themeSwitcher = document.getElementById('theme-switcher');
+    
+            function toggleTheme() {
+                const isDarkTheme = document.body.classList.toggle('dark-theme');
+                localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
+            }
+    
+            themeSwitcher.addEventListener('click', toggleTheme);
+    
+            document.addEventListener('DOMContentLoaded', () => {
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'dark') {
+                    document.body.classList.add('dark-theme');
+                }
+            });
+        </script>
             <h2>Fettuccine Alfredo</h2>
             <img src="https://plantbasedonabudget.com/wp-content/uploads/2020/10/Fettuccine-Alfredo-Plant-Based-on-a-Budget-1-2-500x375.jpg"
                 class="main-picture" alt="Fettuccine Alfredo dish">

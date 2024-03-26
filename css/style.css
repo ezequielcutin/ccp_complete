@@ -7,6 +7,18 @@ body,p {
     text-align: center;
 }
 
+p,body.dark-theme{
+    background-color: rgb(175, 150, 150);
+}
+
+.dark-theme nav{
+    background-color: #555555;
+}
+
+.dark-theme nav ul li a.active{
+    background-color: #000;
+}
+
 /* Navigation styling */
 nav {
     background-color: #8b1515; /* Dark red background */
@@ -168,7 +180,7 @@ h3{
     }
 
     .main-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid for better spacing */
+        grid-template-columns: repeat(auto-fit, minmax(550px, 1fr)); /* Adjust grid for better spacing */
     }
 
     h1, h2, h3 {
