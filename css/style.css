@@ -1,21 +1,28 @@
-/* General body styling */
-body,p {
-    font-family: Verdana, Tahoma, sans-serif; /* Choose a web-safe font or include a link to a web font */
+/* General body and paragraph styling for light theme */
+body, p {
+    font-family: Verdana, Tahoma, sans-serif;
     margin: 10px;
     padding: 10px;
-    background-color: #f0f0f0; /* Light grey background */
+    background-color: #f0f0f0; /* Light grey background for light theme */
     text-align: center;
+    color: #000000; /* Explicit text color for light theme */
 }
 
-p,body.dark-theme{
-    background-color: rgb(175, 150, 150);
+/* Dark theme styles */
+body.dark-theme {
+    background-color: rgb(175, 150, 150); /* Dark theme background */
+    color: #ffffff; /* General text color for dark theme */
 }
 
-.dark-theme nav{
+body.dark-theme p {
+    background-color: rgb(175, 150, 150);; /* Ensuring paragraph text color changes in dark theme */
+}
+
+.dark-theme nav {
     background-color: #555555;
 }
 
-.dark-theme nav ul li a.active{
+.dark-theme nav ul li a.active {
     background-color: #000;
 }
 
