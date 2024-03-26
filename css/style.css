@@ -205,3 +205,35 @@ h3{
     }
 
 }
+
+/* Desktop view adjustments */
+@media screen and (min-width: 1025px) {
+    body, p {
+        font-size: 30px; /* Slightly larger base font size for desktop */
+    }
+
+    nav ul li {
+        margin-right: 30px; /* Decreased spacing between links because incerased font size */
+    }
+
+    nav ul li a {
+        font-size: 1.9em; /* Increase nav link font size for desktop */
+    }
+
+    .main-grid {
+        grid-template-columns: repeat(4, 1fr); /* Adjust grid to display 3 items per row */
+        gap: 20px; /* Add some space between grid items */
+    }
+
+    h1, h2, h3 {
+        font-size: calc(1.2em + 1vw); /* Adjust font sizes for desktop, making them slightly larger and more responsive */
+    }
+
+    .main-picture {
+        width: 80%; /* Adjust the width of the main picture for a better desktop presentation */
+    }
+
+    /* Optionally, you might want to adjust other elements specifically for desktop,
+       such as increasing padding/margins for larger screens, or modifying header/footer layouts. */
+}
+
